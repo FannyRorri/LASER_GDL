@@ -44,21 +44,36 @@ class LaserGlobalTransform:
 
         edge_index, edge_weights = self._create_rewirings(g_nx)
 
-        if hasattr(g, "edge_attr"):
-            to_add = edge_weights.shape[0] - g.edge_attr.shape[0]
-            # assert to_add >= 0
+        if hasattr(g, "edge_attr") and g.edge_attr is not None:
+            edge_attr = g.edge_attr
+
+            # --- FIX: ensure edge_attr is (num_edges, num_features) ---
+            if edge_attr.dim() == 1:
+                edge_attr = edge_attr.unsqueeze(-1)  # (E,) -> (E, 1)
+
+            to_add = edge_weights.shape[0] - edge_attr.shape[0]
+
+            if to_add < 0:
+                # sanity: more original attrs than edges – just truncate
+                edge_attr = edge_attr[:edge_weights.shape[0]]
+                to_add = 0
 
             if to_add > 0:
-                virtual_attrs = torch.full((to_add, ), 0.1).unsqueeze(-1)
-                # print(g.edge_attr.shape, virtual_attrs.shape)
-                edge_attr = torch.cat((g.edge_attr, virtual_attrs),  dim=0)
+                # make virtual attrs match feature dimension
+                virtual_attrs = torch.full(
+                    (to_add, edge_attr.shape[1]),
+                    0.1,
+                    dtype=edge_attr.dtype,
+                    device=edge_attr.device,
+                )
+                edge_attr = torch.cat((edge_attr, virtual_attrs), dim=0)
+        else:
+            # no original attrs: just use edge_weights as a single feature
+            edge_attr = edge_weights.unsqueeze(-1)
 
-                g.edge_attr = edge_attr
-
-                # # TODO can use GCN style weights here if we want to normalize
-                # g.edge_attr = torch.full(edge_weights.shape[0], 0.1).unsqueeze(-1)
-
-        g.edge_index, g.edge_weights = edge_index, edge_weights
+        g.edge_index = edge_index
+        g.edge_attr = edge_attr
+        g.edge_weights = edge_weights
         
         return g
 
@@ -194,7 +209,7 @@ class LaserGlobalTransform:
 
             for j in selected:
                 added_edges.append([i, j])
-                # added_edges.append([j, i])
+                added_edges.append([j, i])
 
         return torch.tensor(added_edges).T
     
