@@ -49,8 +49,7 @@ def scheduler_reduce_on_plateau(optimizer, scheduler_config: SchedulerConfig):
             mode=metric_mode,
             factor=cfg.optim.reduce_factor,
             patience=cfg.optim.schedule_patience,
-            min_lr=cfg.optim.min_lr,
-            verbose=True
+            min_lr=cfg.optim.min_lr
         )
         if not hasattr(scheduler, 'get_last_lr'):
             # ReduceLROnPlateau doesn't have `get_last_lr` method as of current
