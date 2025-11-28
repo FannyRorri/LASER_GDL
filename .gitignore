@@ -20,6 +20,9 @@ scripts/PascalVOC/*.pickle
 scripts/PascalVOC/*.pkl
 scripts/PascalVOC/*.zip
 
+.DS_Store
+*.DS_Store
+
 laser/config/wandb_config.py
 
 wandb/
