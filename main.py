@@ -13,7 +13,7 @@ from torch_geometric.graphgym.cmd_args import parse_args
 from torch_geometric.graphgym.config import (cfg, dump_cfg,
                                              set_agg_dir, set_cfg, load_cfg,
                                              makedirs_rm_exist)
-from torch_geometric.graphgym.loader import create_loader
+from loader import create_loader
 from torch_geometric.graphgym.logger import set_printing
 from torch_geometric.graphgym.optimizer import create_optimizer, \
     create_scheduler, OptimizerConfig, SchedulerConfig
@@ -137,8 +137,12 @@ if __name__ == '__main__':
             wandb_name = make_wandb_name(cfg)
         else:
             wandb_name = cfg.wandb.name
-        run = wandb.init(entity=cfg.wandb.entity, project=cfg.wandb.project,
-                         name=wandb_name)
+
+        run = wandb.init(
+            project=cfg.wandb.project,
+            name=wandb_name
+        )
+        print(run.id)
         run.config.update(cfg_to_dict(cfg))
 
     # Repeat for multiple experiment runs
@@ -147,7 +151,14 @@ if __name__ == '__main__':
         custom_set_run_dir(cfg, run_id)
         set_printing()
 
-        auto_select_device(strategy="greedy")
+        # auto_select_device(strategy="greedy")
+
+        # --- custom device selection: prefer MPS on Apple Silicon ---
+        if torch.backends.mps.is_available():
+            cfg.device = "mps"
+        else:
+            cfg.device = "cpu"
+        logging.info(f"Using device: {cfg.device}")
 
         if cfg.dataset.repeat > 1:
             cfg.seed = idx
