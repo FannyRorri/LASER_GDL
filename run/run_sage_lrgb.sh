@@ -5,7 +5,8 @@ for file in configs/SAGE-lrgb/*; do
     wait
 
     for SEED in {0..3}; do
-        CUDA_VISIBLE_DEVICES=$SEED python main.py --cfg $file device cuda:0 seed $SEED &
+        # CUDA_VISIBLE_DEVICES=$SEED python main.py --cfg $file device cuda:0 seed $SEED &
+        python main.py --cfg $file device cpu seed $SEED & # dont remember why I changed this; greetings Fabian
     done
     wait
 
