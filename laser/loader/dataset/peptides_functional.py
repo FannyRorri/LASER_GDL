@@ -56,7 +56,7 @@ class PeptidesFunctionalDataset(InMemoryDataset):
                 shutil.rmtree(self.folder)
 
         super().__init__(self.folder, transform, pre_transform)
-        self.data, self.slices = torch.load(self.processed_paths[0])
+        self.data, self.slices = torch.load(self.processed_paths[0], weights_only=False) # weights_only=False necessary for MPS
 
     @property
     def raw_file_names(self):
