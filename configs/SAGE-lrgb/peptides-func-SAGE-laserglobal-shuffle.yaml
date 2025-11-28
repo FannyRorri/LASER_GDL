@@ -2,7 +2,7 @@ out_dir: results
 metric_best: ap
 wandb:
   use: True
-  project: peptides-func
+  project: laser
 dataset:
   format: OGB
   name: peptides-functional
