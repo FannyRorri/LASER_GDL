@@ -44,22 +44,20 @@ class LaserGlobalTransform:
 
         edge_index, edge_weights = self._create_rewirings(g_nx)
 
-        if hasattr(g, "edge_attr"):
-            to_add = edge_weights.shape[0] - g.edge_attr.shape[0]
-            # assert to_add >= 0
+        if hasattr(g, "edge_attr"): # hadd to change some stuff here to pass the tests, LG Fabian
+            attr = g.edge_attr
+            to_add = edge_weights.shape[0] - attr.shape[0]
 
             if to_add > 0:
-                virtual_attrs = torch.full((to_add, ), 0.1).unsqueeze(-1)
-                # print(g.edge_attr.shape, virtual_attrs.shape)
-                edge_attr = torch.cat((g.edge_attr, virtual_attrs),  dim=0)
+                # same dtype/device, same number of dimensions, just fewer rows
+                virtual_attrs = attr.new_full(attr.shape, 0.1)[:to_add]
+                attr = torch.cat((attr, virtual_attrs), dim=0)
 
-                g.edge_attr = edge_attr
-
-                # # TODO can use GCN style weights here if we want to normalize
-                # g.edge_attr = torch.full(edge_weights.shape[0], 0.1).unsqueeze(-1)
+            g.edge_attr = attr
+            # if you ever want the "GCN-style" weights, that TODO block would go here
 
         g.edge_index, g.edge_weights = edge_index, edge_weights
-        
+
         return g
 
     def _create_rewirings(self, g):
@@ -194,7 +192,7 @@ class LaserGlobalTransform:
 
             for j in selected:
                 added_edges.append([i, j])
-                # added_edges.append([j, i])
+                added_edges.append([j, i]) # had to change this to pass the tests, LG Fabian
 
         return torch.tensor(added_edges).T
     
