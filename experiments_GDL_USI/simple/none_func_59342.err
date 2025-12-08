@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/bosshf/LASER_GDL/main.py", line 219, in <module>
+    agg_runs(cfg.out_dir, cfg.metric_best)
+  File "/home/bosshf/miniconda/envs/laser/lib/python3.9/site-packages/torch_geometric/graphgym/utils/agg_runs.py", line 143, in agg_runs
+    raise ImportError(
+ImportError: Tensorboard support requires `tensorboardX`.
