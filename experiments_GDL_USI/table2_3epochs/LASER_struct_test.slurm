@@ -17,4 +17,5 @@ cd /home/bosshf/LASER_GDL
 SEED=$SLURM_ARRAY_TASK_ID
 
 echo "Running LASER: Peptides-struct, seed=$SEED"
-python main.py --cfg configs/Peptides-laserglobal/peptides-struct-GCN-laserglobal-shuffle.yaml wandb.use False seed $SEED optim.max_epoch 3
+python main.py --cfg configs/Peptides-laserglobal/peptides-struct-GCN-laserglobal-shuffle.yaml wandb.use False seed $SEED optim.max_epoch 3 \
+    out_dir results/table2/LASER_struct

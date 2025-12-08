@@ -17,4 +17,5 @@ cd /home/bosshf/LASER_GDL
 SEED=$SLURM_ARRAY_TASK_ID
 
 echo "Running SDRF: Peptides-func, seed=$SEED"
-python main.py --cfg configs/Peptides-baselines/SDRF/peptides-func-GCN.yaml wandb.use False seed $SEED optim.max_epoch 3
+python main.py --cfg configs/Peptides-baselines/SDRF/peptides-func-GCN.yaml wandb.use False seed $SEED optim.max_epoch 3 \
+    out_dir results/table2/SDRF_func
