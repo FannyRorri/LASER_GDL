@@ -35,34 +35,34 @@ conda clean --all
 ``` -->
 
 
-#### ✅ 1. Create Clean Environment
+#### Create Clean Environment
 
 ``` bash
 conda create -n laser python=3.9 -y
 conda activate laser
 ```
 
-#### ✅ 2. Install PyTorch + CUDA (Correct Binary Pair)
+#### PyTorch + CUDA (Correct Binary Pair)
 
 ``` bash
 conda install pytorch=1.9.1 torchvision=0.10.1 torchaudio=0.9.1 cudatoolkit=11.1 \
   -c pytorch -c nvidia -y
 ```
 
-#### ✅ 3. Core Scientific Stack
+#### Core Scientific Stack
 
 ``` bash
 conda install numpy=1.24.3 scipy scikit-learn pandas networkx -c conda-forge -y
 ```
 
-#### ✅ 4. RDKit + OGB Dependencies
+#### RDKit + OGB Dependencies
 
 ``` bash
 conda install openbabel rdkit fsspec -c conda-forge -y
 pip install ogb
 ```
 
-#### ✅ 5. PyTorch Geometric + CUDA Extensions (Matched to Torch 1.9.1)
+#### PyTorch Geometric + CUDA Extensions (Matched to Torch 1.9.1)
 
 ``` bash
 conda install pyg=2.0.2 pytorch-scatter=2.0.9 pytorch-sparse=0.6.12 \
@@ -70,13 +70,13 @@ conda install pyg=2.0.2 pytorch-scatter=2.0.9 pytorch-sparse=0.6.12 \
   -c pyg -c conda-forge -y
 ```
 
-#### ✅ 6. DGL (CUDA 11.1 Build)
+#### DGL (CUDA 11.1 Build)
 
 ``` bash
 pip install dgl-cu111 dglgo -f https://data.dgl.ai/wheels/repo.html
 ```
 
-#### ✅ 7. LASER-Specific Python Packages
+#### LASER-Specific Python Packages
 
 ``` bash
 pip install performer-pytorch==1.1.4
@@ -86,16 +86,21 @@ pip install pytorch-lightning==1.6.5.post0
 pip install yacs wandb einops hyper-connections
 ```
 
-#### ✅ 8. JIT + Rewiring Dependencies
+#### JIT + Rewiring Dependencies
 
 ``` bash
 conda install numba llvmlite ninja -c conda-forge -y
 ```
 
-#### ✅ 9. Development & Testing Tools
+#### Development & Testing Tools
 
 ``` bash
 pip install pytest autopep8 rich typer
+```
+
+#### TensorBoard
+``` bash
+pip install tensorboardX
 ```
 
 
