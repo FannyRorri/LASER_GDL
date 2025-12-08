@@ -3,7 +3,7 @@
 #SBATCH --partition=gpu
 #SBATCH --ntasks=1
 #SBATCH --gres=gpu:1
-#SBATCH --time=03:00:00
+#SBATCH --time=10:00:00
 #SBATCH --mem=20G
 #SBATCH --output=LASER_struct_%j.out
 #SBATCH --error=LASER_struct_%j.err
@@ -20,7 +20,7 @@ OUT_BASE="results/table2/LASER_struct"
 
 for SEED in 0 1 2 3; do
     echo "Running LASER: Peptides-struct, seed=${SEED}"
-    python main.py --cfg "${CFG}" wandb.use False seed ${SEED} optim.max_epoch 3         out_dir "${OUT_BASE}"
+    python main.py --cfg "${CFG}" wandb.use False seed ${SEED}         out_dir "${OUT_BASE}"
 done
 
 python - << 'EOF'

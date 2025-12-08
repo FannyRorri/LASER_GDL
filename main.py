@@ -116,7 +116,7 @@ if __name__ == '__main__':
     # Load config file
     set_cfg(cfg)
     load_cfg(cfg, args)
-    custom_set_out_dir(cfg, args.cfg_file, cfg.name_tag)
+    # custom_set_out_dir(cfg, args.cfg_file, cfg.name_tag)
     dump_cfg(cfg)
     # Set Pytorch environment
     torch.set_num_threads(cfg.num_threads)
@@ -214,7 +214,7 @@ if __name__ == '__main__':
         run = None
 
     # Aggregate results from different seeds
-    agg_runs(cfg.out_dir, cfg.metric_best)
+    # agg_runs(cfg.out_dir, cfg.metric_best) 
     # When being launched in batch mode, mark a yaml as done
     if args.mark_done:
         os.rename(args.cfg_file, '{}_done'.format(args.cfg_file))

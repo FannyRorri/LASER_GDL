@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH -J LASER_struct
+#SBATCH -J NONE_struct
 #SBATCH --partition=gpu
 #SBATCH --ntasks=1
 #SBATCH --gres=gpu:1
-#SBATCH --time=03:00:00
-#SBATCH --mem=20G
-#SBATCH --output=LASER_struct_%j.out
-#SBATCH --error=LASER_struct_%j.err
+#SBATCH --time=10:00:00
+#SBATCH --mem=16G
+#SBATCH --output=NONE_struct_%j.out
+#SBATCH --error=NONE_struct_%j.err
 
 # NOTE: main.py must NOT call agg_runs() internally; aggregation is done below.
 
@@ -15,12 +15,12 @@ conda activate laser
 
 cd /home/bosshf/LASER_GDL
 
-CFG="configs/Peptides-laserglobal/peptides-struct-GCN-laserglobal-shuffle.yaml"
-OUT_BASE="results/table2/LASER_struct"
+CFG="configs/GCN/peptides-struct-GCN.yaml"
+OUT_BASE="results/table2/NONE_struct"
 
 for SEED in 0 1 2 3; do
-    echo "Running LASER: Peptides-struct, seed=${SEED}"
-    python main.py --cfg "${CFG}" wandb.use False seed ${SEED} optim.max_epoch 3         out_dir "${OUT_BASE}"
+    echo "Running NONE baseline: Peptides-struct, seed=${SEED}"
+    python main.py --cfg "${CFG}" wandb.use False seed ${SEED}          out_dir "${OUT_BASE}"
 done
 
 python - << 'EOF'
@@ -28,7 +28,7 @@ import os
 from yacs.config import CfgNode
 from torch_geometric.graphgym.utils.agg_runs import agg_runs
 
-out_dir = "results/table2/LASER_struct"
+out_dir = "results/table2/NONE_struct"
 config_path = os.path.join(out_dir, "config.yaml")
 
 cfg = CfgNode(new_allowed=True)
