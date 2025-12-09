@@ -11,7 +11,7 @@ scripts/pcqm4m/pcqm4m-v2/
 slurm_history/
 datasets/
 pretrained/
-results/
+# results/
 trash/
 scripts/PascalVOC/benchmark_RELEASE/
 scripts/PascalVOC/voc_viz_files/
