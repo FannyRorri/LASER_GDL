@@ -1,0 +1,5 @@
+for f in $1/*.*; do
+  echo "===== $f ====="
+  cat "$f"
+  echo
+done
