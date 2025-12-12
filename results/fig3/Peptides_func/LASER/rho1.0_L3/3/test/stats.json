@@ -113,3 +113,4 @@
 {"epoch": 112, "time_epoch": 1.25383, "loss": 0.23357388, "lr": 0, "params": 486010, "time_iter": 0.06599, "accuracy": 0.70742, "ap": 0.66941, "auc": 0.8944}
 {"epoch": 113, "time_epoch": 1.22712, "loss": 0.24071974, "lr": 0, "params": 486010, "time_iter": 0.06459, "accuracy": 0.68683, "ap": 0.66443, "auc": 0.89164}
 {"epoch": 114, "time_epoch": 1.24543, "loss": 0.23642947, "lr": 0, "params": 486010, "time_iter": 0.06555, "accuracy": 0.70184, "ap": 0.66901, "auc": 0.8927}
+{"epoch": 115, "time_epoch": 1.25138, "loss": 0.2392026, "lr": 0, "params": 486010, "time_iter": 0.06586, "accuracy": 0.71042, "ap": 0.6652, "auc": 0.892}

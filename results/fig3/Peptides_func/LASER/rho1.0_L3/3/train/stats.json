@@ -113,3 +113,5 @@
 {"epoch": 112, "time_epoch": 11.46199, "eta": 4459.15701, "eta_hours": 1.23865, "loss": 0.04179044, "lr": 0.000125, "params": 486010, "time_iter": 0.13485, "accuracy": 0.83896, "ap": 0.9673, "auc": 0.99687}
 {"epoch": 113, "time_epoch": 11.50858, "eta": 4447.58793, "eta_hours": 1.23544, "loss": 0.04136989, "lr": 0.000125, "params": 486010, "time_iter": 0.1354, "accuracy": 0.8374, "ap": 0.96724, "auc": 0.9969}
 {"epoch": 114, "time_epoch": 11.40531, "eta": 4435.67421, "eta_hours": 1.23213, "loss": 0.04149156, "lr": 0.000125, "params": 486010, "time_iter": 0.13418, "accuracy": 0.83969, "ap": 0.96947, "auc": 0.99699}
+{"epoch": 115, "time_epoch": 11.51426, "eta": 4424.12989, "eta_hours": 1.22892, "loss": 0.04123269, "lr": 0.000125, "params": 486010, "time_iter": 0.13546, "accuracy": 0.83979, "ap": 0.96691, "auc": 0.99696}
+{"epoch": 116, "time_epoch": 11.4375, "eta": 4412.33481, "eta_hours": 1.22565, "loss": 0.04099592, "lr": 0.000125, "params": 486010, "time_iter": 0.13456, "accuracy": 0.8374, "ap": 0.96789, "auc": 0.99701}

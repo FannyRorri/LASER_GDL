@@ -821,3 +821,23 @@ train: {'epoch': 111, 'time_epoch': 11.51157, 'eta': 4470.88856, 'eta_hours': 1.
 val: {'epoch': 111, 'time_epoch': 1.24011, 'loss': 0.22444973, 'lr': 0, 'params': 486010, 'time_iter': 0.06527, 'accuracy': 0.72415, 'ap': 0.67989, 'auc': 0.89954}
 test: {'epoch': 111, 'time_epoch': 1.23843, 'loss': 0.23607904, 'lr': 0, 'params': 486010, 'time_iter': 0.06518, 'accuracy': 0.70871, 'ap': 0.67019, 'auc': 0.89384}
 > Epoch 111: took 14.1s (avg 14.2s) | Best so far: epoch 108	train_loss: 0.0422 train_ap: 0.9665	val_loss: 0.2200 val_ap: 0.6858	test_loss: 0.2334 test_ap: 0.6692
+train: {'epoch': 112, 'time_epoch': 11.46199, 'eta': 4459.15701, 'eta_hours': 1.23865, 'loss': 0.04179044, 'lr': 0.000125, 'params': 486010, 'time_iter': 0.13485, 'accuracy': 0.83896, 'ap': 0.9673, 'auc': 0.99687}
+val: {'epoch': 112, 'time_epoch': 1.24984, 'loss': 0.22494709, 'lr': 0, 'params': 486010, 'time_iter': 0.06578, 'accuracy': 0.72029, 'ap': 0.67558, 'auc': 0.89909}
+test: {'epoch': 112, 'time_epoch': 1.25383, 'loss': 0.23357388, 'lr': 0, 'params': 486010, 'time_iter': 0.06599, 'accuracy': 0.70742, 'ap': 0.66941, 'auc': 0.8944}
+> Epoch 112: took 14.0s (avg 14.2s) | Best so far: epoch 108	train_loss: 0.0422 train_ap: 0.9665	val_loss: 0.2200 val_ap: 0.6858	test_loss: 0.2334 test_ap: 0.6692
+train: {'epoch': 113, 'time_epoch': 11.50858, 'eta': 4447.58793, 'eta_hours': 1.23544, 'loss': 0.04136989, 'lr': 0.000125, 'params': 486010, 'time_iter': 0.1354, 'accuracy': 0.8374, 'ap': 0.96724, 'auc': 0.9969}
+val: {'epoch': 113, 'time_epoch': 1.24871, 'loss': 0.22718938, 'lr': 0, 'params': 486010, 'time_iter': 0.06572, 'accuracy': 0.70528, 'ap': 0.6733, 'auc': 0.89839}
+test: {'epoch': 113, 'time_epoch': 1.22712, 'loss': 0.24071974, 'lr': 0, 'params': 486010, 'time_iter': 0.06459, 'accuracy': 0.68683, 'ap': 0.66443, 'auc': 0.89164}
+> Epoch 113: took 16.9s (avg 14.2s) | Best so far: epoch 108	train_loss: 0.0422 train_ap: 0.9665	val_loss: 0.2200 val_ap: 0.6858	test_loss: 0.2334 test_ap: 0.6692
+train: {'epoch': 114, 'time_epoch': 11.40531, 'eta': 4435.67421, 'eta_hours': 1.23213, 'loss': 0.04149156, 'lr': 0.000125, 'params': 486010, 'time_iter': 0.13418, 'accuracy': 0.83969, 'ap': 0.96947, 'auc': 0.99699}
+val: {'epoch': 114, 'time_epoch': 1.2338, 'loss': 0.22264145, 'lr': 0, 'params': 486010, 'time_iter': 0.06494, 'accuracy': 0.70828, 'ap': 0.68191, 'auc': 0.90032}
+test: {'epoch': 114, 'time_epoch': 1.24543, 'loss': 0.23642947, 'lr': 0, 'params': 486010, 'time_iter': 0.06555, 'accuracy': 0.70184, 'ap': 0.66901, 'auc': 0.8927}
+> Epoch 114: took 14.0s (avg 14.2s) | Best so far: epoch 108	train_loss: 0.0422 train_ap: 0.9665	val_loss: 0.2200 val_ap: 0.6858	test_loss: 0.2334 test_ap: 0.6692
+train: {'epoch': 115, 'time_epoch': 11.51426, 'eta': 4424.12989, 'eta_hours': 1.22892, 'loss': 0.04123269, 'lr': 0.000125, 'params': 486010, 'time_iter': 0.13546, 'accuracy': 0.83979, 'ap': 0.96691, 'auc': 0.99696}
+val: {'epoch': 115, 'time_epoch': 1.24985, 'loss': 0.22809917, 'lr': 0, 'params': 486010, 'time_iter': 0.06578, 'accuracy': 0.72072, 'ap': 0.6745, 'auc': 0.8987}
+test: {'epoch': 115, 'time_epoch': 1.25138, 'loss': 0.2392026, 'lr': 0, 'params': 486010, 'time_iter': 0.06586, 'accuracy': 0.71042, 'ap': 0.6652, 'auc': 0.892}
+> Epoch 115: took 14.1s (avg 14.2s) | Best so far: epoch 108	train_loss: 0.0422 train_ap: 0.9665	val_loss: 0.2200 val_ap: 0.6858	test_loss: 0.2334 test_ap: 0.6692
+train: {'epoch': 116, 'time_epoch': 11.4375, 'eta': 4412.33481, 'eta_hours': 1.22565, 'loss': 0.04099592, 'lr': 0.000125, 'params': 486010, 'time_iter': 0.13456, 'accuracy': 0.8374, 'ap': 0.96789, 'auc': 0.99701}
+val: {'epoch': 116, 'time_epoch': 1.2436, 'loss': 0.22632606, 'lr': 0, 'params': 486010, 'time_iter': 0.06545, 'accuracy': 0.72329, 'ap': 0.67649, 'auc': 0.89992}
+test: {'epoch': 116, 'time_epoch': 1.2468, 'loss': 0.23865714, 'lr': 0, 'params': 486010, 'time_iter': 0.06562, 'accuracy': 0.70785, 'ap': 0.66695, 'auc': 0.89356}
+> Epoch 116: took 14.0s (avg 14.2s) | Best so far: epoch 108	train_loss: 0.0422 train_ap: 0.9665	val_loss: 0.2200 val_ap: 0.6858	test_loss: 0.2334 test_ap: 0.6692

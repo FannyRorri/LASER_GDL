@@ -456,3 +456,12 @@ train: {'epoch': 20, 'time_epoch': 20.78187, 'eta': 9974.13148, 'eta_hours': 2.7
 val: {'epoch': 20, 'time_epoch': 2.37612, 'loss': 0.41950225, 'lr': 0, 'params': 548510, 'time_iter': 0.12506, 'accuracy': 0.41356, 'ap': 0.422, 'auc': 0.79375}
 test: {'epoch': 20, 'time_epoch': 2.38335, 'loss': 0.42374421, 'lr': 0, 'params': 548510, 'time_iter': 0.12544, 'accuracy': 0.3994, 'ap': 0.41926, 'auc': 0.78406}
 > Epoch 20: took 25.6s (avg 25.7s) | Best so far: epoch 16	train_loss: 0.2041 train_ap: 0.6057	val_loss: 0.2895 val_ap: 0.4802	test_loss: 0.2940 test_ap: 0.4592
+train: {'epoch': 21, 'time_epoch': 20.77196, 'eta': 9952.20355, 'eta_hours': 2.7645, 'loss': 0.17800552, 'lr': 0.001, 'params': 548510, 'time_iter': 0.24438, 'accuracy': 0.73917, 'ap': 0.66956, 'auc': 0.91974}
+val: {'epoch': 21, 'time_epoch': 2.38012, 'loss': 0.25740091, 'lr': 0, 'params': 548510, 'time_iter': 0.12527, 'accuracy': 0.6435, 'ap': 0.51128, 'auc': 0.83792}
+test: {'epoch': 21, 'time_epoch': 2.37922, 'loss': 0.26908562, 'lr': 0, 'params': 548510, 'time_iter': 0.12522, 'accuracy': 0.62849, 'ap': 0.48365, 'auc': 0.82802}
+> Epoch 21: took 25.6s (avg 25.7s) | Best so far: epoch 21	train_loss: 0.1780 train_ap: 0.6696	val_loss: 0.2574 val_ap: 0.5113	test_loss: 0.2691 test_ap: 0.4837
+train: {'epoch': 22, 'time_epoch': 20.75566, 'eta': 9930.03807, 'eta_hours': 2.75834, 'loss': 0.17237952, 'lr': 0.001, 'params': 548510, 'time_iter': 0.24418, 'accuracy': 0.73862, 'ap': 0.68472, 'auc': 0.92406}
+val: {'epoch': 22, 'time_epoch': 2.37724, 'loss': 0.33586535, 'lr': 0, 'params': 548510, 'time_iter': 0.12512, 'accuracy': 0.59545, 'ap': 0.36548, 'auc': 0.75343}
+test: {'epoch': 22, 'time_epoch': 2.38523, 'loss': 0.34968693, 'lr': 0, 'params': 548510, 'time_iter': 0.12554, 'accuracy': 0.57143, 'ap': 0.34677, 'auc': 0.7308}
+> Epoch 22: took 25.6s (avg 25.7s) | Best so far: epoch 21	train_loss: 0.1780 train_ap: 0.6696	val_loss: 0.2574 val_ap: 0.5113	test_loss: 0.2691 test_ap: 0.4837
+train: {'epoch': 23, 'time_epoch': 20.78812, 'eta': 9908.63389, 'eta_hours': 2.7524, 'loss': 0.16797092, 'lr': 0.001, 'params': 548510, 'time_iter': 0.24457, 'accuracy': 0.7445, 'ap': 0.69528, 'auc': 0.92722}

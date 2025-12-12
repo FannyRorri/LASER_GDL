@@ -1881,3 +1881,12 @@ train: {'epoch': 373, 'time_epoch': 19.81946, 'eta': 2498.89848, 'eta_hours': 0.
 val: {'epoch': 373, 'time_epoch': 2.25106, 'loss': 0.31955152, 'lr': 0, 'params': 611010, 'time_iter': 0.11848, 'accuracy': 0.70914, 'ap': 0.61514, 'auc': 0.86885}
 test: {'epoch': 373, 'time_epoch': 2.24055, 'loss': 0.33665098, 'lr': 0, 'params': 611010, 'time_iter': 0.11792, 'accuracy': 0.70099, 'ap': 0.6169, 'auc': 0.86732}
 > Epoch 373: took 24.4s (avg 24.6s) | Best so far: epoch 89	train_loss: 0.0315 train_ap: 0.9798	val_loss: 0.2817 val_ap: 0.6248	test_loss: 0.2994 test_ap: 0.6125
+train: {'epoch': 374, 'time_epoch': 20.05472, 'eta': 2479.14002, 'eta_hours': 0.68865, 'loss': 0.01869063, 'lr': 1e-05, 'params': 611010, 'time_iter': 0.23594, 'accuracy': 0.85671, 'ap': 0.99393, 'auc': 0.99954}
+val: {'epoch': 374, 'time_epoch': 2.35367, 'loss': 0.32148005, 'lr': 0, 'params': 611010, 'time_iter': 0.12388, 'accuracy': 0.71214, 'ap': 0.61324, 'auc': 0.86858}
+test: {'epoch': 374, 'time_epoch': 2.23088, 'loss': 0.33657247, 'lr': 0, 'params': 611010, 'time_iter': 0.11741, 'accuracy': 0.70227, 'ap': 0.61459, 'auc': 0.86768}
+> Epoch 374: took 24.7s (avg 24.6s) | Best so far: epoch 89	train_loss: 0.0315 train_ap: 0.9798	val_loss: 0.2817 val_ap: 0.6248	test_loss: 0.2994 test_ap: 0.6125
+train: {'epoch': 375, 'time_epoch': 20.5536, 'eta': 2459.54451, 'eta_hours': 0.68321, 'loss': 0.01872878, 'lr': 1e-05, 'params': 611010, 'time_iter': 0.24181, 'accuracy': 0.85634, 'ap': 0.99239, 'auc': 0.99948}
+val: {'epoch': 375, 'time_epoch': 2.21937, 'loss': 0.31909063, 'lr': 0, 'params': 611010, 'time_iter': 0.11681, 'accuracy': 0.70785, 'ap': 0.61498, 'auc': 0.8695}
+test: {'epoch': 375, 'time_epoch': 2.31601, 'loss': 0.33600417, 'lr': 0, 'params': 611010, 'time_iter': 0.1219, 'accuracy': 0.70184, 'ap': 0.61794, 'auc': 0.86774}
+> Epoch 375: took 28.1s (avg 24.6s) | Best so far: epoch 89	train_loss: 0.0315 train_ap: 0.9798	val_loss: 0.2817 val_ap: 0.6248	test_loss: 0.2994 test_ap: 0.6125
+train: {'epoch': 376, 'time_epoch': 19.93284, 'eta': 2439.74138, 'eta_hours': 0.67771, 'loss': 0.01848694, 'lr': 1e-05, 'params': 611010, 'time_iter': 0.2345, 'accuracy': 0.85634, 'ap': 0.99319, 'auc': 0.99957}

@@ -1581,3 +1581,12 @@ val: {'epoch': 298, 'time_epoch': 2.88635, 'loss': 0.31257547, 'lr': 0, 'params'
 test: {'epoch': 298, 'time_epoch': 2.89424, 'loss': 0.32754763, 'lr': 0, 'params': 611010, 'time_iter': 0.15233, 'accuracy': 0.69798, 'ap': 0.6207, 'auc': 0.86451}
 > Epoch 298: took 30.9s (avg 31.0s) | Best so far: epoch 115	train_loss: 0.0260 train_ap: 0.9845	val_loss: 0.2948 val_ap: 0.6264	test_loss: 0.3112 test_ap: 0.6192
 train: {'epoch': 299, 'time_epoch': 25.00397, 'eta': 5004.79778, 'eta_hours': 1.39022, 'loss': 0.0205325, 'lr': 1e-05, 'params': 611010, 'time_iter': 0.29416, 'accuracy': 0.85321, 'ap': 0.99061, 'auc': 0.99938}
+val: {'epoch': 299, 'time_epoch': 2.88521, 'loss': 0.3119886, 'lr': 0, 'params': 611010, 'time_iter': 0.15185, 'accuracy': 0.71257, 'ap': 0.61852, 'auc': 0.87422}
+test: {'epoch': 299, 'time_epoch': 2.89594, 'loss': 0.32585331, 'lr': 0, 'params': 611010, 'time_iter': 0.15242, 'accuracy': 0.70142, 'ap': 0.62151, 'auc': 0.86429}
+Check point saved: results/fig3/Peptides_func/LASER/rho0.5_L5/2/ckpt/299.ckpt
+> Epoch 299: took 30.9s (avg 31.0s) | Best so far: epoch 115	train_loss: 0.0260 train_ap: 0.9845	val_loss: 0.2948 val_ap: 0.6264	test_loss: 0.3112 test_ap: 0.6192
+train: {'epoch': 300, 'time_epoch': 25.02166, 'eta': 4979.77225, 'eta_hours': 1.38327, 'loss': 0.0200529, 'lr': 1e-05, 'params': 611010, 'time_iter': 0.29437, 'accuracy': 0.85404, 'ap': 0.99087, 'auc': 0.99947}
+val: {'epoch': 300, 'time_epoch': 2.84675, 'loss': 0.31247508, 'lr': 0, 'params': 611010, 'time_iter': 0.14983, 'accuracy': 0.71128, 'ap': 0.62071, 'auc': 0.87344}
+test: {'epoch': 300, 'time_epoch': 2.89213, 'loss': 0.32784064, 'lr': 0, 'params': 611010, 'time_iter': 0.15222, 'accuracy': 0.70013, 'ap': 0.62259, 'auc': 0.86411}
+> Epoch 300: took 33.7s (avg 31.0s) | Best so far: epoch 115	train_loss: 0.0260 train_ap: 0.9845	val_loss: 0.2948 val_ap: 0.6264	test_loss: 0.3112 test_ap: 0.6192
+train: {'epoch': 301, 'time_epoch': 25.01482, 'eta': 4954.74226, 'eta_hours': 1.37632, 'loss': 0.02057191, 'lr': 1e-05, 'params': 611010, 'time_iter': 0.29429, 'accuracy': 0.85321, 'ap': 0.99132, 'auc': 0.99937}

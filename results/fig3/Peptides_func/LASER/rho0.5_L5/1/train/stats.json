@@ -374,3 +374,4 @@
 {"epoch": 373, "time_epoch": 19.81946, "eta": 2498.89848, "eta_hours": 0.69414, "loss": 0.01803475, "lr": 1e-05, "params": 611010, "time_iter": 0.23317, "accuracy": 0.8579, "ap": 0.99312, "auc": 0.99958}
 {"epoch": 374, "time_epoch": 20.05472, "eta": 2479.14002, "eta_hours": 0.68865, "loss": 0.01869063, "lr": 1e-05, "params": 611010, "time_iter": 0.23594, "accuracy": 0.85671, "ap": 0.99393, "auc": 0.99954}
 {"epoch": 375, "time_epoch": 20.5536, "eta": 2459.54451, "eta_hours": 0.68321, "loss": 0.01872878, "lr": 1e-05, "params": 611010, "time_iter": 0.24181, "accuracy": 0.85634, "ap": 0.99239, "auc": 0.99948}
+{"epoch": 376, "time_epoch": 19.93284, "eta": 2439.74138, "eta_hours": 0.67771, "loss": 0.01848694, "lr": 1e-05, "params": 611010, "time_iter": 0.2345, "accuracy": 0.85634, "ap": 0.99319, "auc": 0.99957}
