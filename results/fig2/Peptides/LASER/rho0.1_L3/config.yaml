@@ -220,7 +220,7 @@ print: both
 round: 5
 run_dir: results/fig2/Peptides/LASER/rho0.1_L3
 run_multiple_splits: []
-seed: 0
+seed: 1
 share:
   dim_in: 1
   dim_out: 1
